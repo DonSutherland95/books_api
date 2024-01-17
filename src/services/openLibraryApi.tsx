@@ -27,3 +27,5 @@ export const fetchAuthorDetails = async (authorId: string) => {
     throw new Error("Unable to fetch author details");
   }
 };
+
+// add another function to convert different date types

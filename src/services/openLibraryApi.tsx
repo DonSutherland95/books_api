@@ -2,6 +2,7 @@ import axios from "axios";
 
 const OPEN_LIBRARY_API_BASE_URL = "https://openlibrary.org/books";
 
+// pull book details ffrom api
 export const fetchBookDetails = async (openLibraryId: string) => {
   try {
     const response = await axios.get(
@@ -16,6 +17,7 @@ export const fetchBookDetails = async (openLibraryId: string) => {
 
 const OPEN_LIBRARY_API_AUTHOR_BASE_URL = "https://openlibrary.org/authors";
 
+// pull author details from api
 export const fetchAuthorDetails = async (authorId: string) => {
   try {
     const response = await axios.get(
